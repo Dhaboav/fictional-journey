@@ -1,0 +1,13 @@
+name: demo-workflow-github
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  demo:
+    name: Coba gitaction PUSH
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Pesan
+        run: echo "Testing demo"
